@@ -10,8 +10,6 @@
  	<link rel="stylesheet" href="styles/font-awesome.min.css" />
  	<!--<link rel="stylesheet" href="styles/Lato.css" />-->
  	<link rel="stylesheet" href="styles/animate.css"/>
- 	<link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
-
 	<link rel="stylesheet" href="styles/style.css" />
 
 	<!--For Codepen
@@ -121,12 +119,24 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-10 col-md-offset-1">
+				<form class="form-horizontal error" novalidate="">
+                        		<div class="control-group">
+                            			<label class="control-label" for="email">Email address</label>
+                            			<div class="controls">
+                                			<input type="email" name="email" id="email" required="" aria-invalid="false">
+                                			<p class="help-block">Email address we can contact you on</p>
+                            			</div>
+					</div>
+                        		<div class="form-actions">
+						<button type="submit" class="btn btn-primary">Test Validation</button>
+                        		</div>
+                   		</form>
 				<form action="https://formspree.io/vovkak13@gmail.com" target="_blank" method="post">
-						<input type="text" name="name" placeholder="Name" required />
-						<input type="email" name="email" placeholder="E-mail" required />
-						<textarea name="message" placeholder="Message" required></textarea>
-						<input type="submit" val="Send" />
-					</form>
+					<input type="text" name="name" placeholder="Name" required />
+					<input type="email" name="email" placeholder="E-mail" required />
+					<textarea name="message" placeholder="Message" required></textarea>
+					<input type="submit" val="Send" />
+				</form>
 			</div>
 		</div>
 	</div>
@@ -166,14 +176,11 @@
 
   <script type="text/javascript" src="js/jquery.min.js"></script>
   <script type="text/javascript" src="js/jquery.easing.min.js"></script>
-  <div class="parral">
-  	<script type="text/javascript" src="js/parallax.min.js"></script>
-  </div>
+  <script type="text/javascript" src="js/parallax.min.js"></script>
   <script type="text/javascript" src="js/jquery.nav.js"></script>
   <script type="text/javascript" src="js/bootstrap.min.js"></script>
   <script type="text/javascript" src="js/wow.min.js"></script>
   <script type="text/javascript" src="js/jqBootstrapValidation.js"></script>
-  <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
   <script type="text/javascript" src="js/common.js"></script>
 
   <!--For Codepen
