@@ -10,7 +10,7 @@ $(document).ready(function(){
 
 	new WOW().init();
 	$('#nav').onePageNav();
-	$("input, select, textarea").jqBootstrapValidation();
+	$("input,select,textarea").not("[type=submit]").jqBootstrapValidation();
 
 	//Адаптивная ширина для .main
 	$(".wow").filter(".fadeIn").attr("data-wow-delay", ".4s");
