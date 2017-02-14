@@ -2,9 +2,205 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>Max Kurylo</title>
+
+	<link rel="stylesheet" href="styles/bootstrap.min.css"/>
+ 	<link rel="stylesheet" href="styles/font-awesome.min.css" />
+ 	<link rel="stylesheet" href="styles/Lato.css" />
+ 	<link rel="stylesheet" href="styles/animate.css"/>
+ 	<link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+
+	<link rel="stylesheet" href="styles/style.css" />
+
+	<!--For Codepen
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"/>
+ 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"/>
+ 	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic"/>
+ 	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"/>
+	<link rel="stylesheet" type="text/css" href="styles/style.css" />
+	-->
+
 </head>
+
 <body>
-	<h1>Hello World!</h1>
+
+<div class="loader">
+	<div class="loaderInner"></div>
+</div>
+
+<div id="main" class="parallax-window" data-parallax="scroll" data-image-src="img/pool.jpg">
+<div class="top-wrapper">
+	<div class="top_desc">
+		<div class="top_centered">
+			<div class="top-text">
+				<h1 class="wow fadeInDown">MAX &nbsp;KURYLO</h1>
+				<p class="wow fadeInUp">WEB-DEVELOPMENT</p>
+				
+				<path stroke="#000" stroke-width="4.3" fill="none" d="…"
+  stroke-dasharray=""
+  stroke-dashoffset="0.00"
+/>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+	
+<section id="services" class="gray">
+	<h2 class="wow fadeIn" id="serv">services</h2>
+	<hr class="wow zoomIn">
+	<div class="container">
+		<div class="row">
+	<div class="col-lg-5 col-lg-offset-1 col-md-6 col-md-offset-0 col-sm-10 col-sm-offset-1">
+		<div class="service wow fadeInLeft">
+			<img src="img/responsive.svg" alt="">
+			<h3>RESPONSIVE DESIGN</h3>
+			<p>There is no need to make a mobile version of your web-site! Responsive design will looks fantastic across all types of devices.</p>
+		</div>
+	</div>
+	<div class="col-lg-5 col-md-6 col-sm-10 col-md-offset-0 col-sm-offset-1">
+		<div class="service wow fadeInRight">
+			<img src="img/responsive.svg" alt="">
+			<h3>JAVASCRIPT PROGRAMMING</h3>
+			<p>Javascript can turn your web-site to the dfdfsdfsdfsfsdfs ddffddf sdsffsdsfdsf sddsfdfsfasd asdfd</p>
+		</div>
+	</div>
+	</div>
+</div>
+</section>
+
+
+
+<section id="works">
+	<h2 class="wow fadeIn">recent works</h2>
+	<hr class="wow zoomIn">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4">
+				<div class="works wow fadeInLeft">
+					<img src="img/calc.jpg" alt="">
+					<a href="https://codepen.io/MaksonVK/full/EZbEqe" target="_blank">
+						<div class="desc">
+							<h5>Calculator</h5>
+							<p>Simple calculator, written on Javascript</p>
+						</div>
+					</a>					
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="works wow fadeIn">
+					<img src="img/calc.jpg" alt="">
+					<a href="https://codepen.io/MaksonVK/full/EZbEqe" target="_blank">
+						<div class="desc">
+							<h5>Calculator</h5>
+							<p>Simple calculator, written on Javascript</p>
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="works wow fadeInRight">
+					<img src="img/calc.jpg" alt="">
+					<a href="https://codepen.io/MaksonVK/full/EZbEqe" target="_blank">
+						<div class="desc">
+							<h5>Calculator</h5>
+							<p>Simple calculator, written on Javascript</p>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section id="contact" class="gray">
+	<h2 class="wow fadeIn" id="serv">contact</h2>
+	<hr class="wow zoomIn">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-10 col-md-offset-1">
+				<form action="http://formspree.io/vovkak13@gmail.com" class="main_form" novalidate="novalidate" target="_blank" method="post">
+						<label class="form-group">
+							<span class="color_element">*</span> Ваше имя:
+							<input type="text" name="name" placeholder="Ваше имя" data-validation-required-message="Вы не ввели имя" required />
+							<span class="help-block text-danger"></span>
+						</label>
+						<label class="form-group">
+							<span class="color_element">*</span> Ваш E-mail:
+							<input type="email" name="email" placeholder="Ваш E-mail" data-validation-required-message="Не корректно введен E-mail" required />
+							<span class="help-block text-danger"></span>
+						</label>
+						<label class="form-group">
+							<span class="color_element">*</span> Ваше сообщение:
+							<textarea name="message" placeholder="Ваше сообщение" data-validation-required-message="Вы не ввели сообщение" required></textarea>
+							<span class="help-block text-danger"></span>
+						</label>
+						<button>Отправить</button>
+					</form>
+				<form action="" class="second-form">
+					<input type="text" name="name" placeholder="Name" />
+					<input type="text" name="email" placeholder="E-mail" />
+					<input type="text" name="message" placeholder="Message" />
+					<button type="submit">Send</button>
+				</form>
+			</div>
+		</div>
+	</div>
+</section>
+
+<nav class="navbar navbar-fixed-top topnav" role="navigation">
+	<div class="container topnav">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand topnav" href="#main">Max Kurylo</a>
+		</div>
+		<!-- Collect the nav links, forms, and other content for toggling -->
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<ul id="nav" class="nav navbar-nav navbar-left">
+				<li class="current"><a href="#main" style="display: none;">Main</a></li>
+				<li><a href="#services">Services</a></li>
+				<li><a href="#works">Works</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</div>
+	</div>
+</nav>
+
+<footer>
+	<div class="container">
+		<div class="row">
+			<p id="link">Inspired by <a href="http://www.federicoguzzardi.com">FEDERICO GUZZARDI</a></p>
+		</div>
+	</div>
+	
+</footer>
+
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/jquery.easing.min.js"></script>
+  <div class="parral">
+  	<script type="text/javascript" src="js/parallax.min.js"></script>
+  </div>
+  <script type="text/javascript" src="js/jquery.nav.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/wow.min.js"></script>
+  <script type="text/javascript" src="js/jqBootstrapValidation.js"></script>
+  <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+  <script type="text/javascript" src="js/common.js"></script>
+
+  <!--For Codepen
+  <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+  <script type="text/javascript" src="js/parallax.min.js"></script>
+  <script type="text/javascript" src="js/jquery.nav.js"></script>
+  <script type="text/javascript" src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/wow.min.js"></script>
+  <script type="text/javascript" src="js/common.js"></script>
+  -->
+
 </body>
 </html>
