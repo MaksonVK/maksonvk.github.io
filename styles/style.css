@@ -186,6 +186,10 @@ h2{
 	background-color: transparent !important;
 }
 
+.help-block>ul>li{
+	list-style-type: none;
+}
+
 footer{
 	position: relative;
 	background-color: currentColor;
