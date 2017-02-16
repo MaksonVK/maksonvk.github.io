@@ -209,6 +209,7 @@ form, .controls{
 }
 
 .nm{
+	min-height: 100px;
 	max-height: 100px;
 	width: 49.7%;
 	display: inline-block;
@@ -277,7 +278,7 @@ textarea{
 }
 
 .help-block{
-	min-height: 33px;
+	max-height: 23px;
 	margin: 0px;
 	padding: 0px;
 }
