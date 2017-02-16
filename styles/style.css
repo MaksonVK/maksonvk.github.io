@@ -205,13 +205,13 @@ form, .controls{
 }
 
 .nm{
-	min-height: 100px;
+	max-height: 100px;
 	width: 49.7%;
 	display: inline-block;
 }
 
 .mes{
-	min-height: 203px;
+	max-height: 203px;
 }
 
 .nm:first-child{
