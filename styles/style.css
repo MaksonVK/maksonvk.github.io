@@ -196,79 +196,61 @@ h2{
 	background-color: #333;
 }
 
-form{
+form, .controls{
 	width: 100%;
+}
+
+.control-group{
+	position: relative;
 }
 
 .nm{
 	width: 49.7%;
-	display: inline-block;
 	height: 100px;
+	display: inline-block;
 }
 
 .nm:first-child{
 	padding-right: 30px;
 }
 
-.controls{
-	display: table-cell;
-	width: 100%;
-	background-color: #fff;
+.mes{
+	height: 200px;
 }
 
-.icon{
-	width: 36px;
+input, textarea{
 	position: relative;
-	padding: 0px 20px;
-	background-color: #fff;
-	height: 100%;
-	display: table-cell;
-	font-size: 32px;
+	width: 100%;
+	border: none;
+	outline: none;
+	font-size: 1.4em;
+	padding: 20px;
+	padding-left: 65px
 }
 
-.icon>p{
-	color: #BABABA;
-	margin-top: 7px;
-	margin-bottom: 0px;
+textarea{
+	resize: none;
+	height: 170px;
 }
 
-.last-icon{
-	padding-right: 56px;
-}
-
-.last-icon>p{
-	margin: 7px 20px;
+.fa-comment-o, .fa-envelope-o, .fa-user-o{
 	position: absolute;
 	top: 0;
 	left: 0;
+	margin-top: 15px;
+	margin-left: 20px;
+	font-size: 32px;
+	color: #BABABA;
 }
 
-@media(max-width:767px){
+@media(max-width: 943px){
 	.nm{
-		padding-right: 0px;
 		width: 100%;
 	}
 
 	.nm:first-child{
-	padding-right: 0px;
-}
-}
-
-input{
-	width: 100%;
-}
-
-input, textarea, input:focus, textarea:focus{
-	font-size: 1.4em;
-	padding: 20px;
-	border: none;
-	outline:none;
-}
-
-textarea{
-	width: 100%;
-	resize: none;
-	height: 170px;
+		padding-right: 0px;
+	}
 }
 
 .form-actions{
@@ -276,7 +258,6 @@ textarea{
 }
 
 .form-actions>button{
-	margin-top: 30px;
 	font-size: 1.5em;
 	width: 150px;
 	padding: 15px 10px;
@@ -285,13 +266,10 @@ textarea{
 	border-radius: 4px;
 }
 
-.control-group{
-	position: relative;
-}
-
-.help-block>ul>li{
-	list-style-type: none;
-	color: #FF7777;
+.fa-paper-plane-o{
+	font-size: 1em;
+	margin-right: 15px;
+	margin-left: -10px;
 }
 
 footer{
