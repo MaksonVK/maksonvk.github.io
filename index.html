@@ -149,24 +149,40 @@
 						<button type="submit"><i class="fa fa-paper-plane-o" aria-hidden="true"></i>Send</button>
 					</div>
 				</form>
-				<form action="http://formspree.io/agragregra@ya.ru" class="main_form" novalidate target="_blank" method="post">
-						<label class="form-group">
-							<span class="color_element">*</span> Ваше имя:
-							<input type="text" name="name" placeholder="Ваше имя" data-validation-required-message="Вы не ввели имя" required />
-							<span class="help-block text-danger"></span>
-						</label>
-						<label class="form-group">
-							<span class="color_element">*</span> Ваш E-mail:
-							<input type="email" name="email" placeholder="Ваш E-mail" data-validation-required-message="Не корректно введен E-mail" required />
-							<span class="help-block text-danger"></span>
-						</label>
-						<label class="form-group">
-							<span class="color_element">*</span> Ваше сообщение:
-							<textarea name="message" placeholder="Ваше сообщение" data-validation-required-message="Вы не ввели сообщение" required></textarea>
-							<span class="help-block text-danger"></span>
-						</label>
-						<button>Отправить</button>
-					</form>
+				<form action="https://formspree.io/vovkak13@gmail.com" class="form-horizontal error" novalidate="" target="_blank" method="post">
+					<div class="control-group nm">
+						<div class="icon">
+							<p><i class="fa fa-user-o" aria-hidden="true"></i></p>
+						</div>
+						<div class="controls">
+							<input type="text" name="name" placeholder="Name" required />
+						</div>
+						<div class="help-block">
+							<ul role="alert">
+								<li>This is required<!-- data-validator-required-message to override --></li>
+							</ul>
+						</div>
+					</div>
+					<div class="control-group nm">
+						<div class="icon">
+							<p><i class="fa fa-envelope-o" aria-hidden="true"></i></p>
+						</div>
+						<div class="controls">
+							<input type="email" name="email" placeholder="Your E-mail" required />
+						</div>
+					</div>
+					<div class="control-group">
+						<div class="icon last-icon">
+							<p><i class="fa fa-comment-o" aria-hidden="true"></i></p>
+						</div>
+						<div class="controls">
+							<textarea name="message" placeholder="Message" required></textarea>
+						</div>
+					</div>
+					<div class="form-actions">
+						<button type="submit"><i class="fa fa-paper-plane-o" aria-hidden="true"></i>Send</button>
+					</div>
+				</form>
 			</div>
 		</div>
 	</div>
