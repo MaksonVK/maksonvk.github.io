@@ -272,7 +272,11 @@ textarea{
 	margin-left: -10px;
 }
 
+.help-block{
+	margin-bottom: 0px;
+}
 .help-block>ul{
+	margin-bottom: 0px;
 	color: #FF6868;
 	list-style-type: none;
 	text-align: left;
