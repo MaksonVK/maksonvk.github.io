@@ -200,6 +200,10 @@ form, .controls{
 	width: 100%;
 }
 
+.controls{
+	height: 100%;
+}
+
 .control-group{
 	position: relative;
 }
