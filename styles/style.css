@@ -206,16 +206,11 @@ form, .controls{
 
 .nm{
 	width: 49.7%;
-	height: 100px;
 	display: inline-block;
 }
 
 .nm:first-child{
 	padding-right: 30px;
-}
-
-.mes{
-	height: 200px;
 }
 
 input, textarea{
@@ -273,10 +268,12 @@ textarea{
 }
 
 .help-block{
-	margin-bottom: 0px;
+	min-height: 33px;
+	margin: 0px;
+	padding-top: 10px;
 }
 .help-block>ul{
-	margin-bottom: 0px;
+	margin: 0px;
 	color: #FF6868;
 	list-style-type: none;
 	text-align: left;
