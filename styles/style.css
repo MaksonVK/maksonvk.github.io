@@ -272,6 +272,12 @@ textarea{
 	margin-left: -10px;
 }
 
+.help-block>ul{
+	color: #FF6868;
+	list-style-type: none;
+	text-align: left;
+}
+
 footer{
 	position: relative;
 	background-color: currentColor;
