@@ -216,7 +216,7 @@ form, .controls{
 }
 
 .mes{
-	max-height: 203px;
+	max-height: 200px;
 }
 
 .nm:first-child{
@@ -278,7 +278,6 @@ textarea{
 }
 
 .help-block{
-	max-height: 23px;
 	margin: 0px;
 	padding: 0px;
 	display: block;
@@ -291,7 +290,7 @@ textarea{
 	list-style-type: none;
 	text-align: left;
 }
-.error>.help-block{
+.error>.help-block, .warning>.help-block{
 	visibility: visible;
 }
 
