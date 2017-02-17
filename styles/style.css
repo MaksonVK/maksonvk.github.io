@@ -291,6 +291,9 @@ textarea{
 	list-style-type: none;
 	text-align: left;
 }
+.error>.help-block{
+	visibility: visible;
+}
 
 footer{
 	position: relative;
