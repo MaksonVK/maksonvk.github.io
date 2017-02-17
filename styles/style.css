@@ -281,6 +281,8 @@ textarea{
 	max-height: 23px;
 	margin: 0px;
 	padding: 0px;
+	display: block;
+	visibility: hidden;
 }
 .help-block>ul{
 	margin: 0px;
