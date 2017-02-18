@@ -55,7 +55,7 @@
 		<div class="service wow fadeInLeft">
 			<img src="img/responsive.svg" alt="">
 			<h3>RESPONSIVE DESIGN</h3>
-			<p>There is no need to make a mobile version of your web-site! Responsive design will looks fantastic across all types of devices.</p>
+			<p>There is no need to make a mobile version of your web-site! Responsive design looks fantastic across all types of devices.</p>
 		</div>
 	</div>
 	<div class="col-lg-5 col-md-6 col-sm-10 col-md-offset-0 col-sm-offset-1">
@@ -165,18 +165,17 @@
 <nav class="navbar navbar-fixed-top topnav" role="navigation">
 	<div class="container topnav">
 		<div class="navbar-header">
-			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-				<span class="sr-only">Toggle navigation</span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-			</button>
+			<div type="button" class="sandwich navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+				<div class="sw-topper"></div>
+				<div class="sw-bottom"></div>
+				<div class="sw-footer"></div>
+			</div>
 			<a class="navbar-brand topnav" href="#main">Max Kurylo</a>
 		</div>
 		<!-- Collect the nav links, forms, and other content for toggling -->
 		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-			<ul id="nav" class="nav navbar-nav navbar-left">
-				<li class="current"><a href="#main" style="display: none;">Main</a></li>
+			<ul id="nav" class="nav navbar-nav navbar-right">
+				<li class="not current"><a href="#main" style="display: none;">Main</a></li>
 				<li><a href="#services">Services</a></li>
 				<li><a href="#works">Works</a></li>
 				<li><a href="#contact">Contact</a></li>
@@ -188,7 +187,16 @@
 <footer>
 	<div class="container">
 		<div class="row">
-			<p id="link">Inspired by <a href="http://www.federicoguzzardi.com">FEDERICO GUZZARDI</a></p>
+			<div class="col-md-4 col-xs-12 social">
+				<a class="social-buttons" href="https://vk.com/id___56___5" target="_blank" title="Vkontakte"><i class="fa fa-vk"></i></a>
+				<a class="social-buttons" href="https://www.facebook.com/profile.php?id=100005226550193" target="_blank" title="Facebook"><i class="fa fa-facebook"></i></a>
+			</div>
+			<div class="col-md-4 col-xs-12 copyright">
+				<p>© <span class="date">2006</span> Max Kurylo</p>
+			</div>
+			<div class="col-md-4 col-xs-12 link">
+				<p>Inspired by <a href="http://www.federicoguzzardi.com">FEDERICO GUZZARDI</a></p>
+			</div>
 		</div>
 	</div>
 	
