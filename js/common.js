@@ -10,6 +10,7 @@ $(document).ready(function(){
 
 	new WOW().init();
 	$('#nav').onePageNav();
+	$("input,select,textarea").not("[type=submit]").jqBootstrapValidation();
 
 	$(".sandwich, .menu_item").click(function() {
   		$(".sandwich").toggleClass("active");
