@@ -413,7 +413,7 @@ footer{
 	text-align: left;
 }
 
-@media(max-width: 720px){
+@media(max-width: 943px){
 	.social, .copyright, .link{
 		text-align: center;
 		margin: 5px;
