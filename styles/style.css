@@ -214,7 +214,7 @@ h2{
 
 @media(max-width: 768px){
 	.navbar-collapse{
-		background-color: rgb(245, 245, 245);
+		background-color: rgba(245, 245, 245, .9);
 		max-width: 300px;
 		margin: 0 auto !important;
 	}
