@@ -30,7 +30,6 @@ $(document).ready(function(){
 	//Адаптивная ширина для .main
 	function height(argument) {
 		$(".main").css("height", $(window).height());
-		$("h1").html($(window).width());
 	}
 	
 	height();
@@ -43,14 +42,17 @@ $(document).ready(function(){
 
 	//Изменение навигация при прокрутке
 	$(window).on("scroll", function() {
-    	if($(window).scrollTop() > $(window).height() - 90) {
-    		$(".navbar-default").css("background-color", "rgb(245, 245, 245)");
-    	    $(".navbar-brand").css("visibility", "visible");
-    	    $(".nav>li>a").css({"font-size": "1.3em", "margin-top": "0px"});
-    	} else {
-    		$(".navbar-default").css("background-color", "transparent");
-       		$(".navbar-brand").css("visibility", "hidden");
-       		$(".nav>li>a").css({"font-size": "1.6em", "margin-top": "20px"});
+		if($(window).width() > 992)
+    		{
+    		if($(window).scrollTop() > $(window).height() - 90) {
+    	    	$(".navbar-default").css("background-color", "rgb(245, 245, 245)");
+    	    	$(".navbar-brand").css("visibility", "visible");
+    	    	$(".nav>li>a").css({"font-size": "1.3em", "margin-top": "0px"});
+    	    } else {
+    	    	$(".navbar-default").css("background-color", "transparent");
+    	       	$(".navbar-brand").css("visibility", "hidden");
+    	       	$(".nav>li>a").css({"font-size": "1.6em", "margin-top": "20px"});
+    		}
     	}
 	});
 });
