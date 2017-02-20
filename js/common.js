@@ -30,6 +30,7 @@ $(document).ready(function(){
 	//Адаптивная ширина для .main
 	function height(argument) {
 		$(".main").css("height", $(window).height());
+		$("h1").html($(window).width());
 	}
 	
 	height();
