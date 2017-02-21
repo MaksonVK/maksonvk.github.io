@@ -1,6 +1,6 @@
 
 $(document).ready(function() {
-    var j = jQuery.noConflict();
+    var $j = jQuery.noConflict();
     $(".row").css("height", $(window).height()-100);
 
   var cels = true,
@@ -14,7 +14,7 @@ $(document).ready(function() {
         location ("//api.openweathermap.org/data/2.5/weather?lat=" + position.coords.latitude + "&lon=" + position.coords.longitude + "&units=metric&APPID=061f24cf3cde2f60644a8240302983f2");
       }, 
       function (error){
-        j.getJSON("//ip-api.com/json", function (json) {
+        $j.getJSON("//ip-api.com/json", function (json) {
           location ("//api.openweathermap.org/data/2.5/weather?lat=" + json.lat + "&lon=" + json.lon + "&units=metric&APPID=061f24cf3cde2f60644a8240302983f2");
           $("footer>p").html("Located by your IP");
 
@@ -45,7 +45,7 @@ $(document).ready(function() {
     $(".icon").hide();
     clear = false;
     $(".randCity, .forecast").show();
-    j.getJSON(url, function(json) {
+    $j.getJSON(url, function(json) {
       $(".message").html(json.name + ", " + json.sys.country);
       temp = Math.round(json.main.temp);
       if (cels)
@@ -62,7 +62,7 @@ $(document).ready(function() {
   }
 
   function localTime (url) {
-    j.getJSON(url, function (json){
+    $j.getJSON(url, function (json){
       var date = new Date();
       var hours = date.getUTCHours() + json.rawOffset/3600;
       if (hours > 23)
