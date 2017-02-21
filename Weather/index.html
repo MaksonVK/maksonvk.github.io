@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Local Weather</title>
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="weather-icons-master/css/weather-icons.min.css"/>
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic"/>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<div class="container">
+	<div class="row">
+		<h1>Current Weather</h1>
+		<h4 class="Sorry"></h4>
+		<h2 class="message"></h2>
+		<h3 id="time"></h3>
+
+		<ul class="temp list-inline">
+			<li><p id="degrees"></p></li>
+			<li><a id = "cels">C</a></li>
+		</ul>
+		<h3 class ="desc"></h3>
+		<div class="icon-holder">
+		<p class="icon Day Clear"><i class="wi wi-day-sunny"></i></p>
+		<p class="icon Night"><i class="wi wi-moon-waning-crescent-3"></i></p>
+
+		<p class="icon Mist Fog"><i class="wi wi-fog"></i></p>
+		<p class="icon Rain"><i class="wi wi-rain"></i></p>
+		<p class="icon Thunderstorm"><i class="wi wi-thunderstorm"></i></p>
+		<p class="icon Clouds"><i class="wi wi-cloudy"></i></p>
+		<p class="icon Snow"><i class="wi wi-snow"></i></p>
+		<p class="icon Haze"><i class="wi wi-day-haze"></i></p>
+		</div>
+		<button class="forecast" disabled title="Coming soon!">Forecast</button>
+		<button class="randCity">Show weather in an intersting city</button>
+		<footer>
+			<p></p> 	
+ 		</footer>
+ 	</div>
+ </div>
+ 
+
+	<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script type="text/javascript" src="common.js"></script>
+</body>
+</html>

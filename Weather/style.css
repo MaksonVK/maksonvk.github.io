@@ -1,0 +1,76 @@
+body {
+  background: url("bg.jpg") no-repeat center center fixed;
+  background-size: cover;
+  color: #161616;
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+  background-color: currentColor;
+}
+
+.row{
+  position: relative;
+  margin: 50px auto;
+  max-width: 800px;
+  min-height: 550px;
+  background-color: rgba(0, 0, 0, .4);
+}
+
+h1 {
+  margin-top: 50px;
+  font-size: 60px;
+}
+
+h1, h2, h3, h4, #degrees{
+  color: white;
+}
+
+.icon-holder{
+  height: 120px;
+}
+
+.icon, #cels{
+  display: none;
+}
+
+.wi{
+  color: white !important;
+  font-size: 100px;
+  font-weight: 200;
+}
+
+#degrees, #cels{
+  font-size: 40px;
+}
+
+.desc:first-letter {
+  text-transform: uppercase;
+}
+
+#cels{
+  cursor: pointer;
+  text-decoration: none;
+  margin-bottom: 18px;
+  margin-left: -10px;
+}
+
+.randCity, .forecast{
+  display: none;
+  font-size: 1.5em;
+  border: none;
+  background-color: transparent;
+  color: white;
+  outline: none;
+}
+
+.forecast{
+  color: gray;
+}
+
+.randCity:hover{
+  color: #337ab7;
+}
+
+
+footer>p{
+  color: white;
+}
