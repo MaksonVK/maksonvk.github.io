@@ -85,7 +85,7 @@ $(document).ready(function() {
   }
 
   $(".randCity").on("click", function(){
-    location ("//api.openweathermap.org/data/2.5/weather?q=" + city[Math.floor(Math.random()*city.length)] + "&units=metric&APPID=061f24cf3cde2f60644a8240302983f2");
+    location ("http://api.openweathermap.org/data/2.5/weather?q=" + city[Math.floor(Math.random()*city.length)] + "&units=metric&APPID=061f24cf3cde2f60644a8240302983f2");
   });
 
   $(".forecast").on("click", function(){
