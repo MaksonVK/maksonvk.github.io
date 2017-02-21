@@ -11,16 +11,16 @@ $(document).ready(function() {
   if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(
       function(position) {
-        location ("https://api.openweathermap.org/data/2.5/weather?lat=" + position.coords.latitude + "&lon=" + position.coords.longitude + "&units=metric&APPID=061f24cf3cde2f60644a8240302983f2");
+        location ("//api.openweathermap.org/data/2.5/weather?lat=" + position.coords.latitude + "&lon=" + position.coords.longitude + "&units=metric&APPID=061f24cf3cde2f60644a8240302983f2");
       }, 
       function (error){
-        $.getJSON("https://ip-api.com/json", function (json) {
-          location ("http://api.openweathermap.org/data/2.5/weather?lat=" + json.lat + "&lon=" + json.lon + "&units=metric&APPID=061f24cf3cde2f60644a8240302983f2");
+        $.getJSON("//ip-api.com/json", function (json) {
+          location ("//api.openweathermap.org/data/2.5/weather?lat=" + json.lat + "&lon=" + json.lon + "&units=metric&APPID=061f24cf3cde2f60644a8240302983f2");
           $("footer>p").html("Located by your IP");
 
         }).fail(function(){
           $(".Sorry").html("Sorry, we aren't able to determine your location, so we have shown the weather in a random city");
-         location ("https://api.openweathermap.org/data/2.5/weather?q=" + city[Math.floor(Math.random()*city.length)] + "&units=metric&APPID=061f24cf3cde2f60644a8240302983f2");
+         location ("//api.openweathermap.org/data/2.5/weather?q=" + city[Math.floor(Math.random()*city.length)] + "&units=metric&APPID=061f24cf3cde2f60644a8240302983f2");
         });
       });
   }
@@ -55,7 +55,7 @@ $(document).ready(function() {
       if(json.weather[0].main == "Clear")
         clear = true;
       $("." + json.weather[0].main).show();
-      localTime ("https://maps.googleapis.com/maps/api/timezone/json?location=" + json.coord.lat + "," + json.coord.lon + "&timestamp=1478880000&key=AIzaSyDJzCmUpU2iw6i9LmCRkkqtRg9twoMxnOE");
+      localTime ("//maps.googleapis.com/maps/api/timezone/json?location=" + json.coord.lat + "," + json.coord.lon + "&timestamp=1478880000&key=AIzaSyDJzCmUpU2iw6i9LmCRkkqtRg9twoMxnOE");
       $(".desc").html(json.weather[0].description);
       $("#cels").show();
     });
@@ -85,7 +85,7 @@ $(document).ready(function() {
   }
 
   $(".randCity").on("click", function(){
-    location ("https://api.openweathermap.org/data/2.5/weather?q=" + city[Math.floor(Math.random()*city.length)] + "&units=metric&APPID=061f24cf3cde2f60644a8240302983f2");
+    location ("//api.openweathermap.org/data/2.5/weather?q=" + city[Math.floor(Math.random()*city.length)] + "&units=metric&APPID=061f24cf3cde2f60644a8240302983f2");
   });
 
   $(".forecast").on("click", function(){
