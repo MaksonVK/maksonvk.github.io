@@ -11,16 +11,16 @@ $(document).ready(function() {
   if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(
       function(position) {
-        location ("//api.openweathermap.org/data/2.5/weather?lat=" + position.coords.latitude + "&lon=" + position.coords.longitude + "&units=metric&APPID=061f24cf3cde2f60644a8240302983f2");
+        location ("http://api.openweathermap.org/data/2.5/weather?lat=" + position.coords.latitude + "&lon=" + position.coords.longitude + "&units=metric&APPID=061f24cf3cde2f60644a8240302983f2");
       }, 
       function (error){
         $.getJSON("//ip-api.com/json", function (json) {
-          location ("//api.openweathermap.org/data/2.5/weather?lat=" + json.lat + "&lon=" + json.lon + "&units=metric&APPID=061f24cf3cde2f60644a8240302983f2");
+          location ("http://api.openweathermap.org/data/2.5/weather?lat=" + json.lat + "&lon=" + json.lon + "&units=metric&APPID=061f24cf3cde2f60644a8240302983f2");
           $("footer>p").html("Located by your IP");
 
         }).fail(function(){
           $(".Sorry").html("Sorry, we aren't able to determine your location, so we have shown the weather in a random city");
-         location ("//api.openweathermap.org/data/2.5/weather?q=" + city[Math.floor(Math.random()*city.length)] + "&units=metric&APPID=061f24cf3cde2f60644a8240302983f2");
+         location ("http://api.openweathermap.org/data/2.5/weather?q=" + city[Math.floor(Math.random()*city.length)] + "&units=metric&APPID=061f24cf3cde2f60644a8240302983f2");
         });
       });
   }
