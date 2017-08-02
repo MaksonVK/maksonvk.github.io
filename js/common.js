@@ -9,7 +9,7 @@ $(window).load(function() {
 $(document).ready(function(){
 	
 	if('vibrate' in navigator)
-		navigator.vibrate(10000);
+		navigator.vibrate(2000);
 
 	new WOW().init();
 	$('#nav').onePageNav();
