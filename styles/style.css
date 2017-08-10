@@ -452,6 +452,10 @@ footer{
 	margin-left: 10px;
 }
 
-.social-buttons:hover{
+.linkedin:hover{
+	background-color: rgb(0, 119, 181);
+}
+
+.social-buttons:hover, .social-buttons:focus{
 	color: white;
 }
