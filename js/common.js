@@ -18,15 +18,6 @@ $(document).ready(function(){
 
 	$(".wow").filter(".fadeIn").attr("data-wow-delay", ".4s");
 
-	$(".social-buttons").hover(function(event){
-		var element = event.currentTarget.children[0].classList[1];
-		if(element == "fa-vk")
-			$("." + element).parent().css("background-color", "#507299");
-		if(element == "fa-facebook")
-			$("." + element).parent().css("background-color", "#3b5998");
-	}, function(){
-		$(".social-buttons").css("background-color", "transparent");
-	});
 	//Адаптивная ширина для .main
 	function height(argument) {
 		$(".main").css("height", $(window).height());
