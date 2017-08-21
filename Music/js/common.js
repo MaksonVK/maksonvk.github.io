@@ -41,6 +41,7 @@ async function getTrackInfo(trackId, albumInfo, trackNumber){
         headers: {
             'X-Retpath-Y': encodeURIComponent('https://music.yandex.ru/')
         },
+	mode: 'no-cors',
         redirect: 'error',
         credentials: 'include'
     };
