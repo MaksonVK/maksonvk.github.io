@@ -44,6 +44,9 @@ async function getTrackInfo(trackId, albumInfo, trackNumber){
         redirect: 'error',
         credentials: 'include'
     };
+	
+    let trackInfoJSON = await fetch(`${baseUrl}/handlers/playlist.jsx?owner=voychenko2015&kinds=3`, options);
+    console.log(trackInfoJSON);
 
     const trackInfoUrl = baseUrl + '/api/v2.1/handlers/track/' + trackId + '/track/download/m?hq=1';
 
@@ -53,7 +56,7 @@ async function getTrackInfo(trackId, albumInfo, trackNumber){
     const salt = 'XGRlBW9FXlekgbPrRHuSiA';
     const hash = md5(salt + downloadInfo.path.substr(1) + downloadInfo.s);
 
-    let trackInfoJSON = await fetch(`${baseUrl}/handlers/track.jsx?track=${trackId}`, options).then(function(resp){return resp.json()});
+    //let trackInfoJSON = await fetch(`${baseUrl}/handlers/track.jsx?track=${trackId}`, options).then(function(resp){return resp.json()});
 
     let trackInfo = {
         url: `https://${downloadInfo.host}/get-mp3/${hash}/${downloadInfo.ts + downloadInfo.path}`,
