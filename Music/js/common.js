@@ -41,10 +41,33 @@ async function getTrackInfo(trackId, albumInfo, trackNumber){
         headers: {
             'X-Retpath-Y': encodeURIComponent('https://music.yandex.ru/')
         },
-	mode: 'no-cors',
-        redirect: 'error',
+        mode: 'no-cors',
         credentials: 'include'
     };
+
+    let link = `${baseUrl}/handlers/playlist.jsx?owner=voychenko2015&kinds=3`;
+
+    function jsonp(url, callback) {
+		var callbackName = 'jsonp_callback_' + Math.round(100000 * Math.random());
+		window[callbackName] = function(data) {
+			console.log(data);
+		    delete window[callbackName];
+		    document.body.removeChild(script);
+		    callback(data);
+		};
+
+		var script = document.createElement('script');
+		script.src = url + (url.indexOf('?') >= 0 ? '&' : '?') + 'callback=' + callbackName;
+		document.body.appendChild(script);
+
+		script.onerror = function (err){
+			console.log(err);
+		};
+		}
+
+	jsonp(link, function(data) {
+		console.log(data);
+	});
 	
     let trackInfoJSON = await fetch(`${baseUrl}/handlers/playlist.jsx?owner=voychenko2015&kinds=3`, options);
     console.log(trackInfoJSON);
